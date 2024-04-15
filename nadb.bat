@@ -3,6 +3,20 @@ setlocal
 
 goto cmds
 
+:secretadb
+echo SECRETADB UTIITY
+echo VERSION 1.0.0
+echo ----------------
+echo This utility disables developer options, but keeps ADB enabled!
+echo This makes it so that no one knows that ADB is enabled.
+echo Press any key to use secretadb...
+
+pause
+
+adb shell settings put global development_settings_enabled 0
+
+echo Success.
+
 :EZFFR
 
 cls
@@ -180,6 +194,8 @@ if /I "%~1"=="set" (
 		goto ezffr
 	) else if "%~2"=="ytrevanced" (
 		goto ytrevanced
+	) else if "%~2"=="secretadb" (
+		goto secretadb
 	)
 ) else (
     echo Unknown command: %~1
