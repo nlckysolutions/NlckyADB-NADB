@@ -49,11 +49,13 @@ Happy EZFFRing! (yes i said EZFFRing)
 ```Introduced to NlckyADB in pre-release v1.0 alpha```
 Before you do this on your device, let me explain what YT ReVanced is (to those who never heard of it), and **MAKE SURE TO READ THROUGH THIS ENTIRE DESCRIPTION TELLING YOU EXACTLY WHAT THE SCRIPT DOES.**
 YT ReVanced is a modified version of youtube with no ads. That's pretty much it. (there are also a ton of other features that i wont be going over because this isnt a description of revanced, just about a script to install it. look up yt revanced if you must)
+
 ALL the script does is: 
 1. Uninstalls the original youtube app (so they dont get mixed up. also works even if you cant uninstall youtube manually)
 2. Downloads the ReVanced APK file to your computer and installs it onto the device.
 3. Downloads the MicroG APK file to your computer and installs it onto the device. (microG is a mod of google play services and yt revanced wont work without it.)
 4. THAT'S IT!!!
+
 The syntax to start the installer is ```nadb util ytrevanced```
 Happy YTREVANCEDing! (yes i know this is getting too ridiculous now)
 
