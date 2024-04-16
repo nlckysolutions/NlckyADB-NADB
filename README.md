@@ -1,5 +1,5 @@
 # NlckyADB
-The ultimate ADB tools, utils, and commands, all in one sleek command: "nadb"
+The ultimate ADB tools, utilities, and functions, all in one sleek command: "nadb"
 
 # Installation
 Simply download the latest release of NlckyADB and open a command prompt as administrator in the same folder the nadb.bat file is in.
