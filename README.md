@@ -35,6 +35,7 @@ There are currently **3** different utilities available.
 
 ### EZ Fast Factory Reset (EZFFR)
 ```Introduced to NlckyADB in pre-release v1.0 alpha```
+
 Ever wondered why factory resets take so long?
 Well here's why, according to Google's AI Overview (which can be more accurate then other AIs):
 ```A factory reset on an Android phone can take up to an hour, depending on the phone's hard drive size and processing speed. This is because the factory reset copies a different filesystem image, then boots into this new system and configures it for the user. This process uses the CPU's full capacity and is similar to installing a new desktop OS.```
@@ -47,6 +48,7 @@ Happy EZFFRing! (yes i said EZFFRing)
 
 ### YT ReVanced installer (I DO NOT OWN YT REVANCED OR CONTRIBUTE TO IT!! I SIMPLY WROTE A SCRIPT TO INSTALL IT AUTOMATICALLY ONTO A DEVICE!!)
 ```Introduced to NlckyADB in pre-release v1.0 alpha```
+
 Before you do this on your device, let me explain what YT ReVanced is (to those who never heard of it), and **MAKE SURE TO READ THROUGH THIS ENTIRE DESCRIPTION TELLING YOU EXACTLY WHAT THE SCRIPT DOES.**
 YT ReVanced is a modified version of youtube with no ads. That's pretty much it. (there are also a ton of other features that i wont be going over because this isnt a description of revanced, just about a script to install it. look up yt revanced if you must)
 
@@ -61,4 +63,5 @@ Happy YTREVANCEDing! (yes i know this is getting too ridiculous now)
 
 ### SecretADB
 (i will write a description soon, for now you can expirement with it if you want with the syntax: ```nadb util secretadb```)
+
 ```Introduced to NlckyADB in pre-release v1.1 alpha```
