@@ -62,6 +62,7 @@ The syntax to start the installer is ```nadb util ytrevanced```
 Happy YTREVANCEDing! (yes i know this is getting too ridiculous now)
 
 ### SecretADB
-(i will write a description soon, for now you can expirement with it if you want with the syntax: ```nadb util secretadb```)
-
 ```Introduced to NlckyADB in pre-release v1.1 alpha```
+
+SecretADB is a unity designed to hide ADB on a device, by disabling dev tools whilst keeping ADB enabled. 
+The syntax to use SECRETADB is ```nadb util secretadb```!
