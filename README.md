@@ -61,8 +61,10 @@ ALL the script does is:
 The syntax to start the installer is ```nadb util ytrevanced```
 Happy YTREVANCEDing! (yes i know this is getting too ridiculous now)
 
+## The "plugins" command
+The plugins command installs custom made plugins on your device!
+Here are the plugins:
 ### SecretADB
-```Introduced to NlckyADB in pre-release v1.1 alpha```
+SecretADB is a plugin designed to hide ADB on a device, by disabling dev tools whilst keeping ADB enabled. 
+The syntax to use SECRETADB is ```nadb plugins install 1```! and to uninstall: ```nadb plugins uninstall 1```
 
-SecretADB is a unity designed to hide ADB on a device, by disabling dev tools whilst keeping ADB enabled. 
-The syntax to use SECRETADB is ```nadb util secretadb```!
