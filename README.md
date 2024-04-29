@@ -1,7 +1,7 @@
 # NlckyADB
 The ultimate ADB tools, utilities, and functions, all in one sleek command: "nadb"
 
-# Please click the sponsor button at the top of the page to donate to NlckyADB if you found it useful! This will keep me motivated to keep working on NlckyADB!
+### Please click the sponsor button at the top of the page to donate to NlckyADB if you found it useful! This will keep me motivated to keep working on NlckyADB!
 
 # Installation
 Simply download the latest release of NlckyADB and open a command prompt as administrator in the same folder the nadb.bat file is in.
@@ -9,6 +9,8 @@ Then, simply execute the below command in command prompt and follow the instruct
 ```
 nadb setup
 ```
+
+**NADB MUST BE USED IN A FOLDER THAT CONTAINS ADB AND FASTBOOT, UNLESS THEY ARE GLOBALLY ACCESSIBLE ON YOUR SYSTEM.**
 
 # Basic Usage
 Before we start using some of the more advanced features, let's go over some basic features first.
@@ -33,7 +35,7 @@ The util command, as you most likely guessed, is short for Utilities.
 These utilities are a combination of adb commands, and can be thought of as seperate, mini projects, all while being within NlckyADB.
 To use a utility, simply use the syntax ```nadb util {UTILITY}```
 
-There are currently **2** different utilities available.
+There are currently **3** different utilities available.
 
 ### EZ Fast Factory Reset (EZFFR)
 ```Introduced to NlckyADB in pre-release v1.0 alpha```
@@ -62,6 +64,12 @@ ALL the script does is:
 
 The syntax to start the installer is ```nadb util ytrevanced```
 Happy YTREVANCEDing! (yes i know this is getting too ridiculous now)
+
+### Image Flasher
+Simply flash an image to your device! (USES FASTBOOT)
+To use, simply enter ```nadb util flash {BOOT or RECOVERY (unless you know what you're doing)} {IMAGE FILE PATH/NAME}```
+It will issue an ADB command to reboot your device into fastboot. Once your device is in fastboot, press any key and it will show you a list of devices. If you see a device listed, press any key. Otherwise, restart the whole process.
+Anyway, if your bootloader is unlocked, and everything is perfect, the image you provided will start flashing onto your device. DO NOT UNPLUG THE CABLE WHILE IT IS FLASHING OR YOU COULD PERMANENTLY BRICK YOUR DEVICE. Once it is finished, and it EXPLICITLY TELLS YOU: "Image flashing complete. You may unplug your device now.", you may then unplug your device, and on most devices, press and hold VOL_DOWN + POWER for about 10 seconds to reboot it.
 
 ## The "plugins" command
 The plugins command installs custom made plugins on your device!
