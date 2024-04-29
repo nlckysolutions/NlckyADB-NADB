@@ -3,20 +3,6 @@ setlocal
 
 goto cmds
 
-:secretadb
-echo SECRETADB UTIITY
-echo VERSION 1.0.0
-echo ----------------
-echo This utility disables developer options, but keeps ADB enabled!
-echo This makes it so that no one knows that ADB is enabled.
-echo Press any key to use secretadb...
-
-pause
-
-adb shell settings put global development_settings_enabled 0
-
-echo Success.
-
 :EZFFR
 
 cls
@@ -93,6 +79,68 @@ echo DONE!
 
 goto end
 
+:flashutil
+
+adb reboot fastboot
+
+echo Flash Utility Version 1.0.0
+echo Your device should reboot into fastboot now.
+echo Once it does, press any key now.
+echo If it doesn't, look up the key combo for your device, and reboot it to fastboot manually.
+echo SAMSUNG DEVICES WILL NOT WORK, THEY DO NOT HAVE FASTBOOT.
+
+pause
+
+echo Great! If your device is successfully in fastboot mode, you should see a device listed below:
+
+fastboot devices
+
+echo If you do see your device listed above, then press any key now.
+echo If you do not, close this command prompt window and restart the whole process.
+
+pause
+
+cls
+
+echo Flash Utility Version 1.0.0
+echo Here's a quick summary of what's going to happen:
+echo Your device will have an image flashed to it.
+echo The image that will be flashed is "%~4".
+echo The partition that it will be flashed to is %~3. (IF THIS IS ANYTHING OTHER THEN "boot" OR "recovery", DO NOT PROCEED UNLESS YOU KNOW WHAT YOU ARE DOING!)
+echo Here's some things to note:
+echo 1. DO NOT UNPLUG THE CABLE WHILE THE DEVICE IS FLASHING.
+echo 2. THE DEVICE'S BOOTLOADER MUST BE UNLOCKED.
+echo 3. THE DEVICE MUST NOT BE A SAMSUNG DEVICE.
+echo 4. YOU MUST MAKE SURE THE DEVICE IS IN FASTBOOT MODE.
+echo IF all of the above are true, you may press any key now to begin flashing.
+echo IF there are any errors, your device is either NOT IN FASTBOOT or THE BOOTLOADER IS NOT UNLOCKED.
+echo IF you see DEVICE NOT FOUND, then your device is not in fastboot.
+echo IF you see pretty much anything with the word BOOTLOADER, then your bootloader is most likely unlocked.
+echo IF you see any error other then that, then pray that you didn't just fry your device forever.
+
+pause 
+
+echo Fastboot flashing...
+fastboot flash %~3 %~4
+
+echo Fastboot most likely finished unless you saw any errors above.
+echo IF you are also sure that fastboot has finished, press any key now.
+
+pause 
+
+echo Congratulations! (unless there were any errors,) You successfully flashed %~4 onto your device!
+echo YOU ARE FREE TO DISCONNECT THE CABLE NOW, OR PRESS ANY KEY NOW AND WE WILL REBOOT FOR YOU.
+
+pause
+
+fastboot reboot
+
+echo Your device SHOULD be rebooting now.
+echo If it didn't, then you either unplugged the cable, or something went horribly wrong.
+echo If you unplugged the cable, then you can reboot yourself on most devices using VOL_DOWN + POWER holding down until it starts to reboot.
+echo FLASHING FINISHED SUCCESSFULLY.
+exit /b
+
 :ytrevanced
 setlocal
 
@@ -141,6 +189,64 @@ REM Delete downloaded files
 del "youtube-revanced-v19.09.37-all.apk" "revanced.net_revanced_gms_microg_v0.3.1.4.240913.apk"
 
 goto end
+
+:plugins
+
+if "%~2"=="list" (
+	goto plugins-list
+) else if "%~2"=="install" (
+	goto plugins-install
+) else if "%~2"=="uninstall" (
+	goto plugins-uninstall
+) else (
+	echo You need to specify a plugin command...
+	echo More info in the NlckyADB Github README.
+	exit /b
+)
+
+:plugins-list
+
+if "%~3"=="available" (
+	goto plugins-list-available
+) else if "%~3"=="installed" (
+	goto plugins-list-installed
+) else (
+	echo You need to specify what to list...
+	echo More info in the NlckyADB Github README.
+	exit /b
+)
+
+:plugins-list-installed
+
+echo Installed plugins on current device:
+adb shell "settings list global | grep "NADB"" 
+exit /b
+
+:plugins-list-available
+
+echo "Available Plugins (use their version code indicated in square brackets to install them):"
+echo [1]: SECRETADB
+exit /b
+
+:plugins-install
+
+if "%~3"=="1" (
+	echo Installing SECRETADB...
+	adb shell settings put global NADB_SECRETADB 1
+	adb shell settings put global development_settings_enabled 0
+	echo Installed successfully!
+	exit /b
+)
+
+:plugins-uninstall
+
+if "%~3"=="1" (
+	echo Uninstalling SECRETADB...
+	adb shell settings put global NADB_SECRETADB 0
+	adb shell settings put global development_settings_enabled 1
+	echo Uninstalled successfully!
+	exit /b
+)
 
 
 :cmds
@@ -194,9 +300,11 @@ if /I "%~1"=="set" (
 		goto ezffr
 	) else if "%~2"=="ytrevanced" (
 		goto ytrevanced
-	) else if "%~2"=="secretadb" (
-		goto secretadb
+	) else if "%~2"=="flash" (
+		goto flashutil
 	)
+) else if /I "%~1"=="plugins" (
+	goto plugins
 ) else (
     echo Unknown command: %~1
     exit /b
