@@ -33,7 +33,7 @@ The util command, as you most likely guessed, is short for Utilities.
 These utilities are a combination of adb commands, and can be thought of as seperate, mini projects, all while being within NlckyADB.
 To use a utility, simply use the syntax ```nadb util {UTILITY}```
 
-There are currently **3** different utilities available.
+There are currently **2** different utilities available.
 
 ### EZ Fast Factory Reset (EZFFR)
 ```Introduced to NlckyADB in pre-release v1.0 alpha```
