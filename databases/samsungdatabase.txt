@@ -1,0 +1,15 @@
+G960U,1,Safestrap,Root access without tripping Knox and with locked bootloader.
+G960U1,1,Safestrap,Root access without tripping Knox and with locked bootloader.
+G960W,1,Safestrap,Root access without tripping Knox and with locked bootloader.
+G950U,1,Safestrap,Root access without tripping Knox and with locked bootloader.
+G950U1,1,Safestrap,Root access without tripping Knox and with locked bootloader.
+G950W,1,Safestrap,Root access without tripping Knox and with locked bootloader.
+G955U,1,Safestrap,Root access without tripping Knox and with locked bootloader.
+G955U1,1,Safestrap,Root access without tripping Knox and with locked bootloader.
+G955W,1,Safestrap,Root access without tripping Knox and with locked bootloader.
+G965U,1,Safestrap,Root access without tripping Knox and with locked bootloader.
+G965U1,1,Safestrap,Root access without tripping Knox and with locked bootloader.
+G965W,1,Safestrap,Root access without tripping Knox and with locked bootloader.
+N960U,1,Safestrap,Root access without tripping Knox and with locked bootloader.
+N960U1,1,Safestrap,Root access without tripping Knox and with locked bootloader.
+N960W,1,Safestrap,Root access without tripping Knox and with locked bootloader.
