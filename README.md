@@ -1,7 +1,7 @@
 # NlckyADB
 The ultimate ADB tools, utilities, and functions, all in one sleek command: "nadb"
 
-### A huge update has came! See Exploits utility [here](###NADB-Exploits)!
+### A huge update has came! See Exploits utility [here](#nadb-exploits)!
 
 **Please click the sponsor button at the top of the page to donate to NlckyADB if you found it useful! This will keep me motivated to keep working on NlckyADB!**
 
