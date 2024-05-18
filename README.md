@@ -1,7 +1,7 @@
 # NlckyADB
 The ultimate ADB tools, utilities, and functions, all in one sleek command: "nadb"
 
-### A huge update has came! See Exploits utility [here](### DIRECT access to all exploits for your device, all in one command: ```nadb util exploits find```)
+### A huge update has came! See Exploits utility [here](###NADB-Exploits)!
 
 **Please click the sponsor button at the top of the page to donate to NlckyADB if you found it useful! This will keep me motivated to keep working on NlckyADB!**
 
@@ -73,7 +73,8 @@ To use, simply enter ```nadb util flash {BOOT or RECOVERY (unless you know what 
 It will issue an ADB command to reboot your device into fastboot. Once your device is in fastboot, press any key and it will show you a list of devices. If you see a device listed, press any key. Otherwise, restart the whole process.
 Anyway, if your bootloader is unlocked, and everything is perfect, the image you provided will start flashing onto your device. DO NOT UNPLUG THE CABLE WHILE IT IS FLASHING OR YOU COULD PERMANENTLY BRICK YOUR DEVICE. Once it is finished, and it EXPLICITLY TELLS YOU: "Image flashing complete. You may unplug your device now.", you may then unplug your device, and on most devices, press and hold VOL_DOWN + POWER for about 10 seconds to reboot it.
 
-### DIRECT access to all exploits for your device, all in one command: ```nadb util exploits find```
+### NADB Exploits
+- DIRECT access to all exploits for your device, all in one command: ```nadb util exploits find```
 - Searches your device's model number in a list of TONS of available exploits
 - If your device's model number matches any exploits, NlckyADB will explain EXACTLY how to do it, or in some cases, give you the option to do it for you!!
 - All exploits are 100% FREE, no more PAID services for something that EVERYONE should have access to.
