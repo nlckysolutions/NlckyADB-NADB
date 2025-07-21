@@ -1,4 +1,7 @@
 # NlckyADB
+
+### NLCKYADB IS NO LONGER BEING MAINTAINED, PLEASE USE nPhoneKIT INSTEAD!!
+
 The ultimate ADB tools, utilities, and functions, all in one sleek command: "nadb"
 
 ### HUGE UPDATE: NADB 2.0! See Exploits utility [here](#nadb-exploits)!
