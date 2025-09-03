@@ -1,6 +1,8 @@
-# NlckyADB
+# NlckyADB (NO LONGER BEING MAINTAINED: Please use nPhoneKIT instead!)
 
-### NLCKYADB IS NO LONGER BEING MAINTAINED, PLEASE USE nPhoneKIT INSTEAD!!
+```diff
+! NLCKYADB IS NO LONGER BEING MAINTAINED, PLEASE USE nPhoneKIT INSTEAD!!
+```
 
 The ultimate ADB tools, utilities, and functions, all in one sleek command: "nadb"
 
