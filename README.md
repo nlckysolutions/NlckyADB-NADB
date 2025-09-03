@@ -1,8 +1,8 @@
 # NlckyADB (NO LONGER BEING MAINTAINED: Please use nPhoneKIT instead!)
 
-```diff
-! NLCKYADB IS NO LONGER BEING MAINTAINED, PLEASE USE nPhoneKIT INSTEAD!!
-```
+$${\color{orange} \textbf{ NLCKYADB IS NO LONGER BEING MAINTAINED, PLEASE USE nPhoneKIT INSTEAD!!} }$$
+
+# [Click me to visit nPhoneKIT](https://github.com/nlckysolutions/nPhoneKIT)
 
 The ultimate ADB tools, utilities, and functions, all in one sleek command: "nadb"
 
